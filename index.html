@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <script type = "text/javascript">
+            function Redirect() {
+                var username=document.getElementById("user").value;
+                var password=document.getElementById("password").value;
+                document.write(username);
+                document.write(password);
+                if(username=="jerry" && password=="jerry@123")
+                    document.location.href="quiz.html";
+                else    
+                    alert("Please enter valid credentials")
+            }
+          </script>
+   </head>
+   
+   <body>
+      <p>Enter login credentials</p>
+      
+      <form>
+        <input type = "text" placeholder = "Enter username" id="user" />
+        <input type = "password" placeholder = "Enter Password" id="password" />
+         <input type = "button" value = "login" onclick = "Redirect();" />
+      </form>
+      
+   </body>
+</html>
